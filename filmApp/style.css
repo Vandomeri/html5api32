@@ -1,0 +1,14 @@
+#filmList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#filmList>div {
+    width: 23%;
+}
+
+#filmList img {
+    width: 100%;
+}

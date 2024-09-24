@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Film</title>
+</head>
+
+<body>
+
+
+
+    <input id="searchBar" type="search" placeholder="ВВедите название фильма">
+    <select id="titleType">
+        <option selected value="movie">Фильмы</option>
+        <option value="musicVideo">Музык видео</option>
+        <option value="podcastEpisode"> Эпизод подкаста</option>
+        <option value="tvEpisode">Сериалы</option>
+        <option value="tvMiniSeries">Мини сериалы</option>
+        <option value="video">Видео</option>
+        <option value="videoGame">Видеоигра</option>
+    </select>
+
+
+    <div id="searchResult"></div>
+
+    <style>
+        #searchResult {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #searchResult>div {
+            width: 23%;
+        }
+
+        #searchResult img {
+            width: 100%;
+        }
+    </style>
+    <script src="./search_script.js"></script>
+</body>
+
+</html>
