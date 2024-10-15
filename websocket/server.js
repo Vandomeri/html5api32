@@ -1,8 +1,12 @@
 const WebSocket = require('ws')
+const port = process.env.PORT || 4000;
 
-const server = new WebSocket.Server({ port: 3000 })
+const server = new WebSocket.Server({ port: port })
+
+console.log(server)
+
 server.on("connection", connect => {
-
+    console.log(connect)
     connect.on('message', message => {
         const msg = JSON.parse(message.toString())
 
