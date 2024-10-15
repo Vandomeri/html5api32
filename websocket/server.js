@@ -3,7 +3,7 @@ const port = process.env.PORT || 4000;
 
 const server = new WebSocket.Server({ port: port })
 
-console.log(server)
+console.log(server, port)
 
 server.on("connection", connect => {
     console.log(connect)
