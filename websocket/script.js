@@ -3,7 +3,7 @@ const form = document.getElementById('form')
 const input = document.getElementById('input')
 const messages = document.getElementById('messages')
 const nickInput = document.getElementById('nickname')
-const ws = new WebSocket('wss://html5api32.onrender.com:3000')
+const ws = new WebSocket('wss://html5api32.onrender.com/:10000')
 
 function printMessage(message) {
     const li = document.createElement('li')
